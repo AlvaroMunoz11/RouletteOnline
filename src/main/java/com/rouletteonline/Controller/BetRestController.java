@@ -1,11 +1,10 @@
-package com.example.rouletteonline.Controller;
+package com.rouletteonline.Controller;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -19,10 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rouletteonline.springboot.backend.apirest.models.entity.Bet;
-import com.rouletteonline.springboot.backend.apirest.models.entity.Roulette;
-import com.rouletteonline.springboot.backend.apirest.models.entity.User;
- 
+
 @CrossOrigin(origins = {"http://localhost:4200"} )
 @RestController
 @RequestMapping("/api")

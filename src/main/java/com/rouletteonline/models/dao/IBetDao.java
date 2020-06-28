@@ -1,4 +1,4 @@
-package com.example.rouletteonline.models.dao;
+package com.rouletteonline.models.dao;
 
 import java.util.List;
 
@@ -6,7 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
-import com.rouletteonline.springboot.backend.apirest.models.entity.Bet;
+import com.rouletteonline.models.entity.Bet;
+
 
 public interface IBetDao extends JpaRepository<Bet, Long> {
 
