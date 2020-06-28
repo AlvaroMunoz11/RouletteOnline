@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -17,6 +18,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.rouletteonline.models.entity.Bet;
+import com.rouletteonline.models.entity.Roulette;
+import com.rouletteonline.services.IBetService;
+import com.rouletteonline.services.IRouletteService;
 
 
 @CrossOrigin(origins = { "http://localhost:4200" })
